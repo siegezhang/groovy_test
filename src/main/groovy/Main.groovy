@@ -87,29 +87,6 @@ def acronym = words.collect(firstLetter >> upper).join()
 assert acronym == 'DRY'
 
 
-//Currying
-def modulus = { mod, num -> num % mod
-}
-assert modulus(2, 5) == 1
-assert modulus(3, 5) == 2
-def mod2 = modulus.curry(2)
-assert mod2(5) == 1
-def mod3 = modulus.curry(3)
-assert mod3(5) == 2
-
-
-def bill = { amount, currency -> "$amount $currency" }
-assert bill(1000, '$') == '1000 $'
-def billInDollars = bill.rcurry('$')
-assert billInDollars(1000) == '1000 $'
-
-
-//Partial Application
-def joinWithSeparator = { one, sep, two -> one + sep + two }
-def joinWithAmpersand = joinWithSeparator.ncurry(1, '&')
-assert joinWithAmpersand('a', 'b') == 'a&b'
-
-
 //不好的写法
 def result = []
 [1, 2, 3, 4].each {

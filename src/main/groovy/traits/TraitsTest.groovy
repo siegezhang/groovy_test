@@ -22,6 +22,10 @@ trait B {
     }
 }
 
+trait Starable {
+    String starify() { this.replaceAll('o', '⭐') }
+}
+
 class C {}
 
 class TraitsTest {
@@ -39,5 +43,22 @@ class TraitsTest {
         def d = c.withTraits A, B
         println d.methodFromA()
         println d.methodFromB()
+    }
+
+    @Test
+    void test2() {
+        def groovy = 'Groovy' as Starable
+        assert groovy.starify() == 'Gr⭐⭐vy'
+    }
+
+    @Test
+    void test3() {
+        def factorial
+        factorial = { n, acc = 1G ->
+            n <= 1 ? acc : factorial.trampoline(n - 1, n * acc)
+        }.trampoline()
+        println factorial(5)
+        println factorial(8000)
+        println factorial(100_000)
     }
 }

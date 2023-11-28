@@ -1,0 +1,3 @@
+moduleName=groovy_test
+moduleVersion=1.0-SNAPSHOT
+staticExtensionClasses=extension.StaticStringExtension

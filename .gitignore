@@ -10,3 +10,5 @@ target/
 *.iml
 bin
 !.gitignore
+/lib/*
+/gradle/wrapper/gradle-wrapper.jar

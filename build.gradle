@@ -14,8 +14,10 @@ dependencies {
     //  implementation 'org.codehaus.groovy, groovy-test-junit5:3.0.19'
     implementation 'org.junit.jupiter:junit-jupiter-api:5.10.1'
     implementation 'org.junit.jupiter:junit-jupiter-engine:5.10.1'
-    implementation group: 'org.apache.groovy', name: 'groovy-sql', version: '5.0.0-alpha-2'
+    implementation group: 'org.apache.groovy', name: 'groovy-sql', version: '5.0.0-alpha-3'
     implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.33'
+    implementation group: 'org.apache.groovy', name: 'groovy-all', version: '5.0.0-alpha-3', ext: 'pom'
+
 
 }
 

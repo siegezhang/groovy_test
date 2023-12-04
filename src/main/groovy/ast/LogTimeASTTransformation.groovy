@@ -70,7 +70,7 @@ class LogTimeASTTransformation extends AbstractASTTransformation {
                         Token.newSymbol(Types.MINUS, 0, 0),
                         new VariableExpression(startTimeVarName),),
                         Token.newSymbol(Types.DIVIDE, 0, 0),
-                        new ConstantExpression(new Integer(1000000)))))
+                        new ConstantExpression(Integer.valueOf(1000000)))))
     }
 
     private static Statement createPrintlnAst(String message) {

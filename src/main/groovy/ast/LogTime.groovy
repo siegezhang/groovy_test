@@ -11,5 +11,4 @@ import java.lang.annotation.Target
 @Retention(RetentionPolicy.SOURCE)
 @Target([ElementType.METHOD])
 @GroovyASTTransformationClass(["ast.LogTimeASTTransformation"])
- @interface LogTime {
-}
+@interface LogTime {}

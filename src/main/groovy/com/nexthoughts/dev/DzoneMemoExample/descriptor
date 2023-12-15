@@ -1,0 +1,5 @@
+Imagine that a customer needs a memo generator.
+ The memos needs to have a few simple fields, such as "to", "from", and "body".
+ The memo can also have sections such as "Summary" or "Important."
+ The summary fields are dynamic and can be anything on demand.
+ In addition, the memo needs to be outputed in three formats: xml, html, and text.

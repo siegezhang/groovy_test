@@ -100,3 +100,41 @@ assert GQ {
                'hubert,hubert@localhost',
                'mrhaki,user@localhost',
                'mrhaki,mrhaki@localhost']
+
+
+def letters = GQ {
+    from letter in ['a', 'b', 'c']
+    select _rn, letter
+}.collect { item -> [item._rn, item.letter] }
+
+assert letters == [[0, 'a'], [1, 'b'], [2, 'c']]
+
+
+def json1 = new JsonSlurper().parseText('''
+[
+  {
+    "id": 1001,
+    "language": "Groovy"
+  },
+  {
+    "id": 1002,
+    "language": "Clojure"
+  },
+  {
+    "id": 1003,
+    "language": "Java"
+  }
+]
+''')
+
+def languages = GQ {
+    from l in json1
+    where l.language == "Groovy"
+    // We add 1 to _rn to make it 1-based instead of 0-based.
+    // Also we use as rowNumber to give a meaningful name.
+    select _rn + 1 as rowNumber, l.id as id, l.language as name
+}.collect { item -> [row: item.rowNumber, name: item.name] }
+
+// Also notice the row number is calculated based
+// on the result after applying the where clause.
+assert languages.first() == [row: 1, name: "Groovy"]

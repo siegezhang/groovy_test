@@ -17,7 +17,7 @@ class EmailSender {
         //2nd argument is owner
         //3rd is this
         def code = cls.rehydrate(handler, null, null)
-        code.resolveStrategy = Closure.DELEGATE_FIRST
+        code.resolveStrategy = Closure.DELEGATE_ONLY
         code.call()//call the new closure
         println handler.attributes
     }

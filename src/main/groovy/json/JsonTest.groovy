@@ -94,6 +94,24 @@ class Villain {
 
 }
 
+{
+    StringWriter writer = new StringWriter()
+    StreamingJsonBuilder builder = new StreamingJsonBuilder(writer)
+    builder.records {
+        car {
+            name 'HSV Maloo'
+            make 'Holden'
+            year 2006
+            country 'Australia'
+            record {
+                type 'speed'
+                description 'production pickup truck with speed of 271kph'
+            }
+        }
+    }
+    println writer.toString()
+}
 
+ObjectGraphBuilder a=new ObjectGraphBuilder()
 
 

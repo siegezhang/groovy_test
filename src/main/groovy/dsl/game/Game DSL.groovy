@@ -6,6 +6,7 @@ class GameDSL {
 
     def players(String[] names) {
         names.each { playersAndScores[it] = 0 }
+        println playersAndScores
     }
 
     def getResult() {

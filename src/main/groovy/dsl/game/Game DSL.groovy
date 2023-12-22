@@ -1,4 +1,4 @@
-package dsl
+package dsl.game
 
 //https://www.infoworld.com/article/2077904/scripting-jvm-languages-creating-dsls-in-java-part-4-where-metaprogramming-matters.html?page=4
 class GameDSL {

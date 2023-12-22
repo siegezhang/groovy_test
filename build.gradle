@@ -24,6 +24,7 @@ dependencies {
     implementation 'org.apache.groovy:groovy-macro-library:5.0.0-alpha-3'
     implementation 'org.apache.groovy:groovy-yaml:5.0.0-alpha-3'
     implementation 'org.apache.groovy:groovy-xml:5.0.0-alpha-3'
+    implementation 'org.apache.groovy:groovy-templates:5.0.0-alpha-3'
     implementation 'org.eclipse.jetty:jetty-server:12.0.5'
     implementation 'org.eclipse.jetty:jetty-servlet:11.0.19'
     implementation 'org.apache.groovy:groovy-servlet:5.0.0-alpha-3'

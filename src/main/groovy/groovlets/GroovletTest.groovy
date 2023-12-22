@@ -38,17 +38,17 @@ import org.eclipse.jetty.servlet.ServletContextHandler
 //    }
 //}
 
-
-def startJetty() {
-    def jetty = new Server(9090)
-
-    def context = new ServletContextHandler.Context(jetty, '/', Context.SESSIONS)  // Allow sessions.
-    context.resourceBase = '.'  // Look in current dir for Groovy scripts.
-    context.addServlet(GroovyServlet, '*.groovy')  // All files ending with .groovy will be served.
-    context.setAttribute('version', '1.0')  // Set an context attribute.
-
-    jetty.start()
-}
-
-println "Starting Jetty, press Ctrl+C to stop."
-startJetty()
+//
+//def startJetty() {
+//    def jetty = new Server(9090)
+//
+//    def context = new ServletContextHandler.Context(jetty, '/', Context.SESSIONS)  // Allow sessions.
+//    context.resourceBase = '.'  // Look in current dir for Groovy scripts.
+//    context.addServlet(GroovyServlet, '*.groovy')  // All files ending with .groovy will be served.
+//    context.setAttribute('version', '1.0')  // Set an context attribute.
+//
+//    jetty.start()
+//}
+//
+//println "Starting Jetty, press Ctrl+C to stop."
+//startJetty()

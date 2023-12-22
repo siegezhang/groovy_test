@@ -1,4 +1,4 @@
-package com.nexthoughts.dev.dslFanMovesdemo
+package dsl.helper
 
 class Fan {
     void move(FanMoves speed) {

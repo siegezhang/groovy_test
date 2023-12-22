@@ -1,4 +1,5 @@
-package com.nexthoughts.dev.DzoneMemoExample
+package dsl.memo
+
 
 import groovy.xml.MarkupBuilder
 

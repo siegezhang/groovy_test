@@ -1,5 +1,4 @@
-package com.nexthoughts.dev.DzoneMemoExample
-
+package dsl.memo
 /**
  * Created by chetan on 26/5/16.
  */

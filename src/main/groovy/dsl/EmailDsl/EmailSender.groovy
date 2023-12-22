@@ -1,4 +1,4 @@
-package com.nexthoughts.dev.EmailDsl
+package dsl.EmailDsl
 
 /**
  * Created by chetan on 26/5/16.*/

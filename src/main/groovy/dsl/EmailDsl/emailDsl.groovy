@@ -1,4 +1,4 @@
-package com.nexthoughts.dev.EmailDsl
+package dsl.EmailDsl
 
 def email = new EmailSender()
 email.send {

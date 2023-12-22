@@ -1,4 +1,5 @@
-package com.nexthoughts.dev.dslFanMovesdemo
+package dsl.helper
+
 
 import org.codehaus.groovy.control.CompilerConfiguration
 import org.codehaus.groovy.control.customizers.ImportCustomizer

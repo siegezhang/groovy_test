@@ -1,4 +1,4 @@
-package com.nexthoughts.dev.dslFanMovesdemo
+package dsl.helper
 println 'hello world'
 move one
 //System.exit(0)

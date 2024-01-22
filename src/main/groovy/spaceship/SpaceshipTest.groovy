@@ -13,7 +13,7 @@ class SpaceshipTest {
         def result = []
 
         for (i in 0..list1.size() - 1) {
-            result << list1[i] <=> list2[i]
+            result << (list1[i] <=> list2[i])
         }
 
         println result

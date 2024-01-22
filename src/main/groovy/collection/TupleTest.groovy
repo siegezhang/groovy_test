@@ -7,9 +7,9 @@ package collection
 
 // We can use first, second, third properties
 // to get values from the tuple.
-    assert tuple3.first == 'add'
-    assert tuple3.second == 2
-    assert tuple3.third == 40.0
+    assert tuple3.v1 == 'add'
+    assert tuple3.v2 == 2
+    assert tuple3.v3 == 40.0
 
 // We can use the [index] syntax to get element.
     assert tuple3[0] == 'add'
@@ -18,10 +18,10 @@ package collection
     Tuple4<String, Integer, BigDecimal, Integer> tuple4 =
             new Tuple4<>('subtract', 100, 55.0, 3)
 
-    assert tuple4.first == 'subtract'
-    assert tuple4.second == 100
-    assert tuple4.third == 55.0
-    assert tuple4.fourth == 3
+    assert tuple4.v1 == 'subtract'
+    assert tuple4.v2 == 100
+    assert tuple4.v3 == 55.0
+    assert tuple4.v4 == 3
     assert tuple4[-1] == 3
 
 // With subTuple we can get subsequent
@@ -34,11 +34,11 @@ package collection
 // Finally a tuple with 9 items.
     def tuple9 = new Tuple9('Groovy', 'rocks', 'and', 'is', 'fun', 'to', 'use', 'as', 'language')
 
-    assert tuple9.fifth == 'fun'
-    assert tuple9.sixth == 'to'
-    assert tuple9.seventh == 'use'
-    assert tuple9.eighth == 'as'
-    assert tuple9.ninth == 'language'
+    assert tuple9.v5 == 'fun'
+    assert tuple9.v6 == 'to'
+    assert tuple9.v7 == 'use'
+    assert tuple9.v8 == 'as'
+    assert tuple9.v9 == 'language'
 
 // Tuple extends AbstractList, so we can
 // use all methods from List as well.

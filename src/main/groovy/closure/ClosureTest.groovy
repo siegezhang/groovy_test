@@ -38,8 +38,8 @@ class ClosureTest {
         def minutesToSeconds = { it * 60 }
         def hoursToMinutes = { it * 60 }
         def daysToHours = { it * 24 }
-        def hoursToSeconds = minutesToSeconds << hoursToMinutes
-        def daysToSeconds = hoursToSeconds << daysToHours
+        def daysToSeconds = minutesToSeconds << hoursToMinutes<< daysToHours
+        //def daysToSeconds = hoursToSeconds << daysToHours
         assert daysToSeconds(1) == 86400
     }
 

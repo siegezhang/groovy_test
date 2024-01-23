@@ -1,4 +1,4 @@
-package destructuring
+package multiple_assignments
 
 import groovy.transform.Immutable
 

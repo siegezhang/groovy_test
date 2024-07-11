@@ -6,7 +6,7 @@ def templateText = templateFile.text
 
 def binding = [
         className: "MyClass", // Replace with desired class name
-        name: "defaultName" // Replace with desired default name
+        name     : "defaultName" // Replace with desired default name
 ]
 
 def engine = new SimpleTemplateEngine()
@@ -18,3 +18,4 @@ def javaFile = new File("MyClass.java") // Replace with desired output filename
 javaFile.write(output)
 
 println "Java class generated: MyClass.java"
+println "fullNameValue: ${binding.fullName}"

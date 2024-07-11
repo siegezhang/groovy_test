@@ -1,7 +1,7 @@
 
 <%
-    // Define variables
-    def fullName = "${name.toUpperCase()}-${className.toUpperCase()}"
+    // Define variables 注意变量作用域
+    fullName = "${name.toUpperCase()}-${className.toUpperCase()}"
 %>
 
 package com.example;

@@ -1,3 +1,4 @@
+package template.example
 // Import necessary libraries
 import groovy.text.SimpleTemplateEngine
 

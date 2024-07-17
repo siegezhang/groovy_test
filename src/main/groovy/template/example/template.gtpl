@@ -18,3 +18,14 @@ public class ${className} {
     this.name = name;
   }
 }
+
+
+<%
+    // Example list of items
+    def items = ["Item1", "Item2", "Item3"]
+%>
+<ul>
+<% items.each { item -> %>
+    <li>${item}</li>
+<% } %>
+</ul>

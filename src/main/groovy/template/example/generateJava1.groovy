@@ -1,3 +1,5 @@
+package template.example
+
 import groovy.text.SimpleTemplateEngine
 
 // Define the binding with nested objects
